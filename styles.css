@@ -61,7 +61,7 @@ h1 em { color: var(--forest); font-weight: inherit; }
 .two-column .lead { color: var(--ink); font-size: 1.27rem; line-height: 1.55; }
 .mission-section { background: var(--deep-forest); color: #fbf8ef; }
 .mission-section .section-label { color: #e1c189; }
-.section-heading h2 { color: #fff; }
+.mission-section .section-heading h2 { color: #fff; }
 .mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 62px; background: rgba(255,255,255,.22); }
 .mission-grid article { min-height: 275px; padding: 28px; background: var(--deep-forest); }
 .card-number { margin: 0 0 58px; color: #e1c189; font: 600 1rem var(--serif); }
@@ -90,11 +90,11 @@ address { margin-bottom: 42px; font: 600 2rem/1.25 var(--serif); font-style: nor
 .photo-grid figure:nth-child(1) img { object-position: center; }
 .photo-grid figure:nth-child(2) img { object-position: center; }
 .photo-grid figcaption, .campus-photo-grid figcaption { padding-top: 12px; color: var(--muted); font-size: .9rem; }
-.campus-life-section { background: var(--cream); border-top: 1px solid var(--line); }
-.campus-life-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 42px; }
+.campus-life-section { padding: clamp(48px, 6vw, 72px) 0 clamp(64px, 8vw, 96px); background: var(--cream); border-top: 1px solid var(--line); }
+.campus-life-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 28px; }
 .campus-life-heading h2 { color: var(--ink); }
 .campus-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
-.campus-photo-grid img { width: 100%; height: 360px; display: block; object-fit: cover; }
+.campus-photo-grid img { width: 100%; height: 320px; display: block; object-fit: cover; }
 .generosity-layout { display: grid; grid-template-columns: minmax(160px, .5fr) minmax(0, 1.5fr); gap: clamp(30px, 8vw, 140px); }
 .generosity-layout h2 { max-width: 740px; font-size: clamp(2.2rem, 4.5vw, 4rem); letter-spacing: -.035em; }
 .generosity-layout div p { max-width: 700px; color: var(--muted); }
@@ -116,9 +116,8 @@ address { margin-bottom: 42px; font: 600 2rem/1.25 var(--serif); font-style: nor
   .hero-photo, .hero-photo img { min-height: 300px; }
   .hero-copy { order: 0; }
   .two-column, .vision-layout, .generosity-layout { grid-template-columns: 1fr; gap: 12px; }
-  .school-life-heading, .campus-life-heading { display: block; margin-bottom: 28px; }
-  .photo-grid, .campus-photo-grid { grid-template-columns: 1fr; }
-  .photo-grid img, .campus-photo-grid img { height: 270px; }
+  .school-life-heading, .campus-life-heading { display: block; margin-bottom: 24px; }
+  .photo-grid img, .campus-photo-grid img { height: 210px; }
   .mission-grid { grid-template-columns: 1fr; margin-top: 38px; }
   .mission-grid article { min-height: 0; }
   .card-number { margin-bottom: 25px; }
